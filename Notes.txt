@@ -1,7 +1,7 @@
 Message Broker 
  - RabbitMQ 
     - Recieve messages from publisher and route them to consumers 
-    - ARMQP 
+    - AMQP ( Advanced Messages Queueing Protocol ) 
 
  Fan out exchange 
 
@@ -23,3 +23,13 @@ Message Broker
         Looks at each message headers to figure out which one to be delivered 
 
 
+Commands - 
+    -Windows 
+        - To start RabbitMQ 
+            - rabbitmq-server 
+        - Request status 
+            - rabbitmqctl status
+        - Checking queues
+            - rabbitmqctl list_queues 
+        - To find which servers are coordinating together 
+            - rabbitmqctl cluster_status
