@@ -1,0 +1,25 @@
+Message Broker 
+ - RabbitMQ 
+    - Recieve messages from publisher and route them to consumers 
+    - ARMQP 
+
+ Fan out exchange 
+
+ -- >  message --> sent to multiple queue's
+
+
+ Exchange Types - 
+    Direct Types - 
+        One to one Reciever 
+
+    Fan Out Exchange - 
+        Copy of each message sent to each queue thats bound to it 
+
+    Topic exchange 
+        Every consumer that is listening for specific routing key will get a copy of each message
+        delivered 
+    
+    Headers -
+        Looks at each message headers to figure out which one to be delivered 
+
+
